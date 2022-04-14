@@ -12,15 +12,19 @@
 
 <body>
     <div class="container mt-4">
-        <div class="col-6">
-            <div class="col-6">
-                <div class="input-group">
-                    <input id="search-input" type="text" class="form-control" placeholder="Enter text" aria-label="">
-                    <button id="btn-search" type="button" class="btn btn-primary">Search</button>                    
+        <div class="col-6 bl">
+            <h2>
+                NETFLIX TRAILER RATING
+            </h2>
+            <div>
+            <div class="col-6 search-bar">
+                <div class="input-group genre-box">
+                    <input id="search-input" type="text" class="form-control" placeholder="Find A Movie" aria-label="">
+                    <button id="btn-search" type="button" class="btn btn-primary search-btn">Search</button>                    
                   </div>
             </div>
-            <div class="col-6">
-                <select id="genre-option" class="form-select" aria-label="Default select example">
+            <div class="col-6 search-bar">
+                <select id="genre-option" class="form-select genre-box" aria-label="Default select example">
                     <option selected>Genre</option>
                     <option value="Comedy">Comedy</option>
                     <option value="Action">Action</option>
@@ -28,6 +32,10 @@
                     <option value="Anime">Anime</option>
                 </select>
             </div>
+            <div class="return-btn">
+                <a id="return" href="about.html">&#8592; return to genres</a>
+              </div>
+        </div>
         </div>
         <!-- Results -->
         <div id="cartoon-grid" class="row row-cols-1 row-cols-md-4 g-4 mt-4">
